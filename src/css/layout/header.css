@@ -22,6 +22,16 @@
 
 }
 
+.header__search {
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    position: absolute;
+    top: 13px;
+    right: 300px;
+    z-index: 1;
+}
+
+
 .header__icone {
     z-index: 10;
     display: inline-block;
@@ -29,9 +39,10 @@
 }
 
 .header__menuBtn {
-    border: none;
+   
     background: transparent;
     position: absolute;
+    border: none;
     top: 13px;
     right: 20px;
     z-index: 1;
