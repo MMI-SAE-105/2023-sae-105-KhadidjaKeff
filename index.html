@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Time</title>
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+
+ <!--En-tête de page--> 
+
+    <header class="header">
+    
+      <div class="header__start">
+        <a href="index.html">
+         <img src="/public/img/img/logoentier.png" alt="logo du site RoadMap">
+        </a>
+      </div>
+
+
+<div class="header__end">
+  <button class="header__search">
+    <img src="/public/img/icone/recherche.svg" alt="icone de recherche">
+  </button>
+</div>
+
+  <button class="header__menu-btn" 
+          @click="menuIsOpen = !menuIsOpen" 
+          :class="menuIsOpen && 'menu-btn--open'">
+    <span class="menu-btn__bar"></span>
+    <img src="" alt="">
+  </button>
+
+
+</body>
+</html>
