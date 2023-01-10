@@ -1,0 +1,8 @@
+.background_article{
+    position: relative;
+    z-index: 200;
+    background-color: rgb(225, 225, 225);
+    height: 2168px;
+    border-radius: 20px;
+    top: -20px;
+}
