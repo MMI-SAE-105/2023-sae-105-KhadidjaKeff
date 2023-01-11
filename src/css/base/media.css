@@ -24,3 +24,12 @@
 .index_artistes {
     padding: 40px;
 }
+
+.images_artiste_article {
+    border-style: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    border-radius: 15px;
+}

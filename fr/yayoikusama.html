@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pop-Art Club </title>
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="shortcut icon" href="/public/img/icons/Logo-1.ico" type="image/x-icon">
+
+</head>
+<body>
+
+
+ <!--En-tête de page--> 
+
+ <header class="header">
+    <div class="header__main">
+        <a href="index.html" class="header__icone">
+            <img src="/public/img/index/Logo 1.webp" alt="Logo Pop Art Club" class="header__logo">
+        </a>
+
+        <button  aria-controls="mainNav" @click="menuIsOpen= ! menuIsOpen" class="header__menuBtn">
+            <img src="/public/img/icons/menu_icon.svg" alt="Menu">
+        </button>
+
+        <button   class="header__search">
+            <img src="/public/img/icons/search_icon.svg" alt="Recherche">
+        </button>
+    </div>
+    
+<!--MENU-->
+
+    <nav id="mainNav" x-show="menuIsOpen" class="header__menu">
+        <button class="menu__close" @click="menuIsOpen= ! menuIsOpen"><img class="menu__close--img" src="/public/img/icons/CloseCircleOutlined.svg" alt="dermer le menu"></button>
+        <ul class="menu__list--top">
+            <ul class="menu__list--article">
+                <li class="menu__item"><a href="/fr/nosartistes.html" class="menu__link"> Nos artistes </a></li>
+                <li class="menu__item"><a href="/fr/nosoeuvres.html" class="menu__link"> Nos oeuvres </a></li>
+
+            </ul>
+            <li class="menu__list list__projets"><a href="/fr/nostarifs.html" class="menu__link"> Nos tarifs</a></li>
+        </ul>
+        <ul class="menu__list--bottom">
+            <li class="menu__item"><a href="/fr/a_propos.html" class="menu__link--propos">A propos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- FIN DU MENU-->
+
+
+<!--CONTENU PRINCIPAL-->
+
+<section class="background_content">
+
+
+    <div>
+        <img class='images_artiste_article' src="/public/img/article_Yayoi/Group 1 1.webp" alt=" Yayoi Kusama">
+        <h1>Yayoi Kusuma</h1>
+    </div>
+
+    <p>
+        Le pop art est un ensemble de phénomènes artistiques intimement liés à l'esprit d'une époque, l'essence d'un large mouvement culturel des années 1960. Il trouve son origine en Grande-Bretagne au milieu des années 1950, mais se répand rapidement à l'ensemble du monde occidentalisé dans le contexte de la société industrielle capitaliste. Celle-ci s'appuie sur les nouvelles technologies en plein essor dont les artistes pop vont s'emparer et qui touchent toute la sphère culturelle : le pop art se manifeste dans les pratiques et les comportements de toute une génération.
+    </p>
+
+    <h3>
+        Les artistes à ne pas rater
+    </h3>
+
+    
+
+
+
+
+
+
+</section>
+
+
+
+<!-- Pied de page --> 
+<footer class="footer">
+     <h3 class="footercategorie">Nous suivre </h3>
+    
+    <nav class="footerborder">
+
+        <a class="footeritem5" href="informations.html"> Plus d'informations
+        </a>
+        <a class="footeritem6" href="/fr/nostarifs.html"> Nos tarifs
+        </a>
+        <a class="footeritem7" href="/fr/contact.html"> Nous contacter
+        </a>
+    </nav>
+
+     <div>
+        <h3 class="footercategorie">Mentions légales</h3>
+    </div>
+</footer>
+
+ 
+      <!-- Fin du pied de page -->
+
+</body>
