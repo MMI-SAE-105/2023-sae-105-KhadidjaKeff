@@ -7,16 +7,18 @@
     top: -200px;
 }
 
+
 .background_content {
+    padding-top: 150px;
     position: relative;
     z-index: 1;
     background-color: rgba(236, 236, 236, 1);
     height: 2168px;
-    border-radius: 20px;
+  
 }
 
 h1 {
-    padding-top: 30px;
+    padding-top: 10px;
     text-align: center;
     font-family: 'Bangers';
     color: rgb(111, 8, 8);
