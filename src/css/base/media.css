@@ -6,8 +6,6 @@
     margin-right: auto;
     width: 90%;
     border-radius: 15px;
-  
-
 }
 
 .photo_artiste {
@@ -22,7 +20,7 @@
 }
 
 .index_artistes {
-    padding: 40px;
+    padding: 20px;
 }
 
 .images_artiste_article {

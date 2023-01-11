@@ -1,9 +1,10 @@
 .background_article{
-    top: -73px;
+    top: -20px;
     position: relative;
     z-index: 9;
     background-color: rgba(236, 236, 236, 1);
     border-radius: 20px;
+    
 }
 
 
@@ -12,7 +13,7 @@
     position: relative;
     z-index: 1;
     background-color: rgba(236, 236, 236, 1);
-
+    
   
 }
 
