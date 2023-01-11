@@ -7,4 +7,4 @@
 @import "/src/css/base/media.css";
 @import "/src/css/components/frise.css";
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bangers&family=Open+Sans&family=Outfit&display=swap');
-
+@import "/src/css/components/menu.css"
