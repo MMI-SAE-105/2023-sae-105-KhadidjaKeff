@@ -1,122 +1,54 @@
-.footer{
-    border-radius: 20px;
-    background-color:rgb(20, 18, 18);
-    height: 320px;
-    width: 100%;
-  }
-  
-  .footercategorie{
+.footer {
+    background-color: #181818;
+    height: 350px;
+    border-radius: 24px 24px 0 0;
+    padding: 30px;
+}
+
+.footer__name {
+    font-size: 1rem;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__quote {
+    font-size: 1rem;
+    margin: 30px 0;
+    color: whitesmoke;
+    line-height: 120%;
+    font-style: italic;
+    display: block;
+    text-align: center;
+}
+
+.footer__mailto {
+    display: block;
+    font-family: 'Outfit';
+    color: whitesmoke;
+}
+.footer__mailto p {
     font-family: 'Outfit';
     text-align: center;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    padding-top: 15px;
-    color: #ffffff; 
-    margin-top: 5px;
-  }
-  
-  .footeritem{
-    position: absolute;
-    left: 36%;
-    right: 59.73%;
-    top: 50px;
-    bottom: 73.02%;
-    padding-bottom: 40px;
-  }
-  
-  .footeritem2{
-    position: absolute;
-    left: 48.53%;
-    right: 48.8%;
-    top: 50px;
-    bottom: 73.02%;
-  }
-  
-  .footeritem3{
-    position: absolute;
-    left: 58.4%;
-    right: 37.07%;
-    top: 51px;
-    bottom: 73.41%;
-  }
-  
-  .footeritem4{
+    border: whitesmoke 1px solid;
+    border-radius: 50px;
+    margin: 0% 25%;
+    padding: 5px 15px;
+}
 
-    line-height: 40px;
-    width: 67px;
-    padding-left: 10px;
-  
+.footer__list {
     font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    color: #ffffff;
-  }
-  
-  .footeritem5{
-    width: 67px;
-    padding-left: 10px;
-  
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+
+.footer__link {
     font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    color: #ffffff;
-  }
-  
-  .footeritem6{
-    width: 67px;
-    padding-left: 10px;
-  
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    color: #ffffff;
-  }
-  
-  .footeritem7{
-    width: 67px;
-    padding-left: 10px;
-  
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    color: #ffffff;
-  }
-  
-  .footerborder{
-    border-bottom: 1px solid #ffffff;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding-bottom: 20px;
-    padding-top: 10px;
-  }
-  
-  
-  .footerexercice{
-   font-family: 'Outfit';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 13px;
-   color: #ffffff;
-   margin-left: 5px;
-   text-align: center;
-  }
-  
-  .footer__icon{
-   line-height: 50px; 
-   margin-top: 30px;
-  
-   border-bottom: 1px solid #ffffff;
-   padding-bottom: 30px;
-   margin-left: 15px;
-   margin-right: 15px;
-  }
-  
-  
-  .footercategorie {
-    font-family: 'Outfit';
-  }
+    color: whitesmoke;
+    font-style: italic;
+    text-decoration: none;
+    gap: 50px;
+}
