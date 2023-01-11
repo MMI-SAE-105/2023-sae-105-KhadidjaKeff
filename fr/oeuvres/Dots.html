@@ -91,6 +91,43 @@
         <h3><a class="lien_index" href="/fr/oeuvres/Pumpkins.html"> Pumpkins, 1990 </a></h3>
     </div>
 
+
+
+<!--CAROUSEL-->
+
+<carrousel x-data="{hrefCourant: '#ecran-1'}" class="caroussel">
+    <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth" class="carrousel__btn carrousel__btn--avant" aria-label="slide précedant">&lt;</button>
+    <button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth" class=" carrousel__btn carrousel__btn--apres" aria-label="slide suivant">></button>
+            <div class="carrousel__parent--ecrans" x-ref="parent"
+                @scroll.debounce.250ms.passive="
+hrefCourant = '#'+
+              [...$refs.parent.children]
+               .find(e=>e.getBoundingClientRect().x>=0)
+               .id
+                                 ">
+                <div id="ecran-1" class="carrousel__ecran">
+                    <figure>
+                        <img class="carou" src="/public/img/carousel/carousel1.webp" alt="">
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel__ecran">
+                    <figure>
+                        <img class="carou" src="/public/img/carousel/carousel2.webp" alt="">
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel__ecran">
+                    <figure>
+                        <img class="carou" src="/public/img/carousel/carousel3.webp" alt="">
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carrousel__ecran">
+                    <figure>
+                        <img class="carou" src="/public/img/carousel/carousel4.webp" alt="">
+                    </figure>
+</carrousel>
+
+
+
 </section>
 
 

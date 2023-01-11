@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    /* change le box model */
+
+}
+
+figure {
+    height: 11.875;
+    width: auto;
+}
+
+.carrousel__parent--ecrans {
+    display: flex;
+    /* aligne horizontalement les enfants */
+    width: 100%;
+    /* largeur du parent */
+    overflow-x: scroll;
+    /* permet de scroller horizontalement */
+    scroll-behavior: smooth;
+    /* animation de défilement */
+    scroll-snap-type: x mandatory;
+}
+
+.carrousel__ecran {
+    width: 100%;
+    /* largeur du parent pour chaque enfant */
+    flex: none;
+    /* permet de garder toute la largeur du parent */
+    scroll-snap-align: start;
+}
+
+.carrousel__ecran img {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.carrousel__ecran figure {
+    margin: 0 20px 0 20px;
+    /* enlève les marges par défaut */
+}
+
+.carrousel {
+    position: relative;
+}
+
+.carrousel__btn {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.683);
+    font-weight: bold;
+    border: none;
+    place-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.carrousel__btn--avant {
+    left: 25px;
+    top: 910px;
+}
+
+.carrousel__btn--apres {
+    right: 25px;
+    top: 910px;
+}
+
+.carrousel__btn--avantEn {
+    left: 25px;
+    top: 870px;
+}
+
+.carrousel__btn--apresEn {
+    right: 25px;
+    top: 870px;
+}
+
+.actif {
+    color: rgb(37, 99, 255);
+}
