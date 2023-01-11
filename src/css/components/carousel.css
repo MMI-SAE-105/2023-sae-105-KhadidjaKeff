@@ -21,6 +21,7 @@ figure {
     scroll-snap-type: x mandatory;
 }
 
+
 .carrousel__ecran {
     width: 100%;
     /* largeur du parent pour chaque enfant */
@@ -32,7 +33,7 @@ figure {
 .carrousel__ecran img {
     width: 95%;
     display: block;
-    margin: 0 auto;
+    margin-bottom: 60px;
 
 }
 
@@ -40,6 +41,7 @@ figure {
     margin: 0 20px 0 20px;
     /* enlève les marges par défaut */
 }
+
 
 .carrousel {
     position: relative;

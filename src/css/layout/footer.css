@@ -3,6 +3,17 @@
     height: 350px;
     border-radius: 24px 24px 0 0;
     padding: 30px;
+    top: -20px;
+    z-index: 2;
+    position: relative;
+}
+
+.bodyindex section{
+    margin-bottom: -90px;
+}
+
+.bodyindex footer{
+    z-index: 50;
 }
 
 .footer__name {
