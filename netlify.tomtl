@@ -1,0 +1,26 @@
+[[plugins]]
+ package = "@netlify/plugin-lighthouse"
+ 
+  [[plugins.inputs.audits]]
+    output_path="reports/index.html"
+    path = "index.html" #la racine du site
+
+    [[plugins.inputs.audits]]
+    output_path="reports/fr/yayoikusuma.html"
+    path = "fr/yayoikusama.html" #la racine du site
+
+    [[plugins.inputs.audits]]
+    output_path="reports/fr/rogerraveel.html"
+    path = "fr/rogerraveel.html" #la racine du site
+
+    [[plugins.inputs.audits]]
+    output_path="reports/fr/roylichtenstein.html"
+    path = "fr/roylichtenstein.html" #la racine du site
+
+    [[plugins.inputs.audits]]
+    output_path="reports/fr/contact.html"
+    path = "fr/contact.html" #la racine du site
+
+    [[plugins.inputs.audits]]
+    output_path="reports/fr/andywarhol.html"
+    path = "fr/andywarhol.html" #la racine du site
