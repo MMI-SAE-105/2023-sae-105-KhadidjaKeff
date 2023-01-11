@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Andy Warhol </title>
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="shortcut icon" href="/public/img/icons/Logo-1.ico" type="image/x-icon">
+
+</head>
+<body>
+
+
+ <!--En-tête de page--> 
+
+ <header class="header">
+    <div class="header__main">
+        <a href="/index.html" class="header__icone">
+            <img src="/public/img/index/Logo 1.webp" alt="Logo Pop Art Club" class="header__logo">
+        </a>
+
+        <button  aria-controls="mainNav" @click="menuIsOpen= ! menuIsOpen" class="header__menuBtn">
+            <img src="/public/img/icons/menu_icon.svg" alt="Menu">
+        </button>
+
+        <button   class="header__search">
+            <img src="/public/img/icons/search_icon.svg" alt="Recherche">
+        </button>
+    </div>
+    
+<!--MENU-->
+
+    <nav id="mainNav" x-show="menuIsOpen" class="header__menu">
+        <button class="menu__close" @click="menuIsOpen= ! menuIsOpen"><img class="menu__close--img" src="/public/img/icons/CloseCircleOutlined.svg" alt="dermer le menu"></button>
+        <ul class="menu__list--top">
+            <ul class="menu__list--article">
+                <li class="menu__item"><a href="/fr/nosartistes.html" class="menu__link"> Nos artistes </a></li>
+                <li class="menu__item"><a href="/fr/nosoeuvres.html" class="menu__link"> Nos oeuvres </a></li>
+
+            </ul>
+            <li class="menu__list list__projets"><a href="/fr/nostarifs.html" class="menu__link"> Nos tarifs</a></li>
+        </ul>
+        <ul class="menu__list--bottom">
+            <li class="menu__item"><a href="/fr/a_propos.html" class="menu__link--propos">A propos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- FIN DU MENU-->
+
+
+<!--CONTENU PRINCIPAL-->
+
+<section class="background_content">
+
+
+    <div>
+        <img class='images_artiste_article' src="/public/img/article_Andy/Group 2.webp" alt=" Yayoi Kusama">
+        <h1>Andy Warhol</h1>
+    </div>
+
+    <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil fuga quasi eos ipsum similique sed voluptatum! Unde ab facere adipisci error corrupti est, amet totam sint autem, laudantium voluptates quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, atque iure vitae repudiandae culpa ullam consectetur repellat natus beatae vel repellendus sequi quaerat perspiciatis quam vero sint illo aperiam qui!  
+    </p>
+
+    <h3>
+        Les artistes à ne pas rater
+    </h3>
+
+    <img class='image_generic' src="/public/img/article_Andy/Andy_Warhol_and_its_art 1.webp" alt=" Andy and his art">
+
+    <p>
+        Yayoi Kusama souffrait d’hallucinations infantiles où un motif envahissait sa vision. Pour faire face à cette situation, elle peignait ce qu’elle voyait. L’artiste Yayoi Kusama a expliqué, » Un jour, je regardais les motifs de fleurs rouges de la nappe sur la table, et quand j’ai levé les yeux, j’ai vu le même motif couvrir le plafond, les fenêtres et les murs, et finalement toute la pièce, mon corps et l’univers. J’avais l’impression d’avoir commencé à m’auto-oblitérer, à tourner dans l’infini du temps sans fin et l’absolu de l’espace et à être réduit au néant. » Ce fut l’influence des points et des motifs répétitifs dans son travail.
+    </p>
+
+    <h3>
+        L’art d'Andy
+    </h3>
+
+    <div class='index_artistes'>
+        <img class="photo_artiste" src="/public/img/article_Andy/elvis_andy_warhol 1.webp" alt=" Elvis">
+        <h3><a class="lien_index" href="/fr/oeuvres/Elvis.html"> Elvis, </a></h3>
+    </div>
+
+    <div class='index_artistes'>
+        <img class="photo_artiste" src="/public/img/article_Andy/campbell_soup 1.webp" alt=" Campbell's soup">
+        <h3><a class="lien_index" href="/fr/oeuvres/campbellsoup.html"> Campbell's soup, </a></h3>
+    </div>
+
+</section>
+
+
+
+<!-- Pied de page --> 
+<footer class="footer">
+     <h3 class="footercategorie">Nous suivre </h3>
+    
+    <nav class="footerborder">
+
+        <a class="footeritem5" href="informations.html"> Plus d'informations
+        </a>
+        <a class="footeritem6" href="/fr/nostarifs.html"> Nos tarifs
+        </a>
+        <a class="footeritem7" href="/fr/contact.html"> Nous contacter
+        </a>
+    </nav>
+
+     <div>
+        <h3 class="footercategorie">Mentions légales</h3>
+    </div>
+</footer>
+
+ 
+      <!-- Fin du pied de page -->
+
+</body>
